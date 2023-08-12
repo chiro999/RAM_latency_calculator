@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<div>
+    <form>
+        <label for="MHz">Speed (MHz)</label>   
+        <select id="speed_unit" name="s_units">
+            <option value="hz">Megahertz(MHz)</option>
+        <input type="number" id="speed" placeholder= "value" name="speed"><br>
+        <label for="Height">CAS Latency(CL)</label>
+        <select id="weight_unit" name="w_units">
+            <option value="cl">CAS LATENCY (CL)</option>
+        <input type="number" id="CL" placeholder= "value" name="CAS"><br>
+      </form>  
+      <h2>Latency in nanoseconds
+      </h2>
+        <p id = "latency_value"></p>     
+
+
+      <button type="button" onclick="calculate()">Calculate</button>
+
+</div>
+
+  </body>
+  <script src="code.js"></script>
+</html>
